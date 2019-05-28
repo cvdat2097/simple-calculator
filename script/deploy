@@ -2,7 +2,7 @@
 
 pwd
 ls
-cd /root/Desktop/simple-calculator
+cd /simple-calculator
 git pull
 npm install
 pm2 restart all
