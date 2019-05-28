@@ -23,3 +23,5 @@ app.listen(PORT, err => {
         console.log(`[PORT:${PORT}] Server is running...`);
     }
 });
+
+module.exports = app;
