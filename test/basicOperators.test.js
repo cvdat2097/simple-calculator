@@ -2,7 +2,7 @@ const request = require('supertest');
 const app = require('../app');
 
 describe('Basic Operatiors', function() {
-    it('Add operator', function(done) {
+    it('Add operator: Valid', function(done) {
         const operand1 = 23;
         const operand2 = 43;
         const expectedResult = 66;
