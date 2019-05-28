@@ -6,8 +6,9 @@ const bodyParser = require('body-parser');
 const basicOperators = require('./routes/basicOperators');
 const squareOperator = require('./routes/squareOperator');
 
+// HOMEPAGE
 app.get('/', (req, res) => {
-    res.send('DevOps pipeline has been set up successfully');
+    res.send('Welcome to DevOps calculator!');
 });
 
 app.use(
