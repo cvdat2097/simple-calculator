@@ -5,7 +5,7 @@ describe('Basic Operatiors', function() {
     it('Add operator', function(done) {
         const operand1 = 23;
         const operand2 = 43;
-        const expectedResult = 66;
+        const expectedResult = 266;
 
         request(app)
             .post('/add')
