@@ -1,5 +1,6 @@
 #!/bin/sh
 
+ll
 cd /root/Desktop/simple-calculator
 git pull
 npm install
