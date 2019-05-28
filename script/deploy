@@ -1,3 +1,9 @@
 #!/bin/sh
 
-pm2 start index.js
+ssh root@localhost <<EOF        
+ cd /root/Desktop/simple-calculator
+ git pull       
+ npm install --production       
+ pm2 restart all
+ exit       
+EOF
