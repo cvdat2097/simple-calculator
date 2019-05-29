@@ -8,7 +8,7 @@ const squareOperator = require('./routes/squareOperator');
 
 // HOMEPAGE
 app.get('/', (req, res) => {
-    res.send('FAILED VERSION');
+    res.send('WORKING VERSION');
 });
 
 app.use(

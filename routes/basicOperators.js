@@ -1,16 +1,16 @@
 const router = require('express').Router();
 
 router.post('/add', (req, res) => {
-    const { firstOperand, operand2 } = req.body;
+    const { operand1, operand2 } = req.body;
 
-    if (firstOperand === undefined || operand2 === undefined) {
+    if (operand1 === undefined || operand2 === undefined) {
         return res.json({
             returnCode: 0,
             message: 'Operands are missing'
         });
     }
 
-    const a = Number(firstOperand);
+    const a = Number(operand1);
     const b = Number(operand2);
 
     if (Number.isNaN(a) || Number.isNaN(b)) {
@@ -30,16 +30,16 @@ router.post('/add', (req, res) => {
 });
 
 router.post('/subtract', (req, res) => {
-    const { firstOperand, operand2 } = req.body;
+    const { operand1, operand2 } = req.body;
 
-    if (firstOperand === undefined || operand2 === undefined) {
+    if (operand1 === undefined || operand2 === undefined) {
         return res.json({
             returnCode: 0,
             message: 'Operands are missing'
         });
     }
 
-    const a = Number(firstOperand);
+    const a = Number(operand1);
     const b = Number(operand2);
 
     if (Number.isNaN(a) || Number.isNaN(b)) {
@@ -59,16 +59,16 @@ router.post('/subtract', (req, res) => {
 });
 
 router.post('/multiply', (req, res) => {
-    const { firstOperand, operand2 } = req.body;
+    const { operand1, operand2 } = req.body;
 
-    if (firstOperand === undefined || operand2 === undefined) {
+    if (operand1 === undefined || operand2 === undefined) {
         return res.json({
             returnCode: 0,
             message: 'Operands are missing'
         });
     }
 
-    const a = Number(firstOperand);
+    const a = Number(operand1);
     const b = Number(operand2);
 
     if (Number.isNaN(a) || Number.isNaN(b)) {
@@ -88,16 +88,16 @@ router.post('/multiply', (req, res) => {
 });
 
 router.post('/divide', (req, res) => {
-    const { firstOperand, operand2 } = req.body;
+    const { operand1, operand2 } = req.body;
 
-    if (firstOperand === undefined || operand2 === undefined) {
+    if (operand1 === undefined || operand2 === undefined) {
         return res.json({
             returnCode: 0,
             message: 'Operands are missing'
         });
     }
 
-    const a = Number(firstOperand);
+    const a = Number(operand1);
     const b = Number(operand2);
 
     if (Number.isNaN(a) || Number.isNaN(b)) {
