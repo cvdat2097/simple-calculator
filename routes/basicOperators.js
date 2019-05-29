@@ -20,12 +20,12 @@ router.post('/add', (req, res) => {
         });
     }
 
-    const result = a + b;
+    const results = a + b;
 
     return res.json({
         returnCode: 1,
         message: 'Calculation is successful',
-        result
+        results
     });
 });
 
@@ -49,12 +49,12 @@ router.post('/subtract', (req, res) => {
         });
     }
 
-    const result = a - b;
+    const results = a - b;
 
     return res.json({
         returnCode: 1,
         message: 'Calculation is successful',
-        result
+        results
     });
 });
 
@@ -78,12 +78,12 @@ router.post('/multiply', (req, res) => {
         });
     }
 
-    const result = a * b;
+    const results = a * b;
 
     return res.json({
         returnCode: 1,
         message: 'Calculation is successful',
-        result
+        results
     });
 });
 
@@ -107,16 +107,16 @@ router.post('/divide', (req, res) => {
         });
     }
 
-    let result = a / b;
+    let results = a / b;
 
-    if (!Number.isFinite(result)) {
-        result = result.toString();
+    if (!Number.isFinite(results)) {
+        results = results.toString();
     }
 
     return res.json({
         returnCode: 1,
         message: 'Calculation is successful',
-        result
+        results
     });
 });
 
