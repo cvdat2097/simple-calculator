@@ -8,7 +8,7 @@ const squareOperator = require('./routes/squareOperator');
 
 // HOMEPAGE
 app.get('/', (req, res) => {
-    res.send('Welcome to DevOps calculator!');
+    res.send('Welcome to Hw3 simple-calculator!');
 });
 
 app.use(
