@@ -8,7 +8,7 @@ const squareOperator = require('./routes/squareOperator');
 
 // HOMEPAGE
 app.get('/', (req, res) => {
-    res.send('Welcome to Hw3 simple-calculator!');
+    res.send('FAILED VERSION');
 });
 
 app.use(

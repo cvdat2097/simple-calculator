@@ -19,12 +19,12 @@ router.post('/square', (req, res) => {
         });
     }
 
-    const result = a * a;
+    const results = a * a;
 
     return res.json({
         returnCode: 1,
         message: 'Calculation is successful',
-        result
+        results
     });
 });
 
