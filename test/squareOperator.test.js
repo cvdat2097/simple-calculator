@@ -4,7 +4,7 @@ const app = require('../app');
 describe('Advacned Operators', function() {
     it('Square operator: Valid', function(done) {
         const operand = 11;
-        const expectedResult = 11;
+        const expectedResult = 121;
 
         request(app)
             .post('/square')
